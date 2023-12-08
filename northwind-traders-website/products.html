@@ -48,6 +48,46 @@
       </div>
     </nav>
 
-    <select name="productsSelect" id="productsSelect"></select>
+    <div class="container pt-4">
+      <div class="split-container">
+        <div class="split-left">
+          <h1 class="text-center text-primary mt-5 mb-5">
+            Know what you're looking for? Look here.
+          </h1>
+          <h6 class="text-danger">Search for item:</h6>
+          <input
+            type="text"
+            class="form-control mb-3"
+            id="productSearchInput"
+            placeholder="Enter item name"
+          />
+          <div id="cityListContainer"></div>
+        </div>
+
+        <template id="productsTemplate">
+          <div class="card mt-2">
+            <h4 id="weather-header" class="card-header">Tonight</h4>
+            <div class="card-body">
+              <img id="weather-icon" src="" alt="" />
+              <div class="forecast-data">
+                <div>Temp:</div>
+                <div class="forecast-value" id="temperature-value">32 F</div>
+                <div>Wind:</div>
+                <div class="forecast-value" id="wind-value">
+                  5 to 13 mph - W
+                </div>
+                <div>Forecast:</div>
+                <div class="forecast-value" id="forecast-value">Light Snow</div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <div id="productsContainer" class="split-right">
+                
+    </div>
+
   </body>
 </html>
