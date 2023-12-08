@@ -1,0 +1,4 @@
+{
+    "/api/*": "/$1",
+    "/categories/:id/products": "/categories/:id?_embed=products"
+  }
